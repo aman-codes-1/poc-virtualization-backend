@@ -6,11 +6,11 @@
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node dist/src/index.js",
+    "start": "node dist/index.js",
     "start:ts": "tsc-watch --project . --onSuccess \"npm run nodemon\"",
     "start:extreme": "tsc-watch --project . --onSuccess \"npm run nodemon:extreme\"",
-    "nodemon": "nodemon ./dist/src/index.js",
-    "nodemon:extreme": "nodemon --max-old-space-size=12288 ./dist/src/index.js"
+    "nodemon": "nodemon ./dist/index.js",
+    "nodemon:extreme": "nodemon --max-old-space-size=12288 ./dist/index.js"
   },
   "author": "",
   "license": "ISC",

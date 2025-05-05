@@ -1,7 +1,6 @@
 import { config } from 'dotenv';
 import * as Joi from 'joi';
 import Iconfig from './IConfig';
-import { version } from '../../package.json';
 
 config();
 
@@ -31,7 +30,7 @@ const myConfig: Iconfig = Object.freeze({
     servers: [{ url: 'http://localhost:9001/api/' }],
     info: {
       ...ABOUT,
-      version,
+      version: '1.0.0',
     },
     components: {
       securitySchemes: {
