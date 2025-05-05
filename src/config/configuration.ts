@@ -15,7 +15,7 @@ export const ABOUT = {
 const envVarSchema = Joi.object({
   NODE_ENV: Joi.string().default('development'),
   PORT: Joi.number().default(4000),
-  MONGO_URL: Joi.string().default('mongodb+srv://render_large_data:KyGjHje358ih2Z93@cluster0.nnnh5.mongodb.net/render_large_data?retryWrites=true&w=majority'),
+  MONGO_URL: Joi.string().default('mongodb+srv://amancodes0:EV7MOaNjBHcPqt1I@cluster0.uqkkghd.mongodb.net/'),
   SEED: Joi.boolean().default(false),
 }).unknown().required();
 
