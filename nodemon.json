@@ -1,0 +1,6 @@
+{
+  "verbose": true,
+  "runOnChangeOnly": false,
+  "ext": "js json graphql",
+  "delay": 7000
+}
