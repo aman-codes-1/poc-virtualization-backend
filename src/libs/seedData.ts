@@ -10,7 +10,7 @@ const seedData = async () => {
   try {
     if (seed) {
       console.log('inside seed data');
-      const promises = initData.map(async (val) => {
+      const promises = initData?.map(async (val) => {
         await userRepository.insertMany(val);
       });
       return Promise.all(promises);
