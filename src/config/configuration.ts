@@ -15,7 +15,7 @@ export const ABOUT = {
 const envVarSchema = Joi.object({
   NODE_ENV: Joi.string().default('development'),
   PORT: Joi.number().default(4000),
-  MONGO_URL: Joi.string().default('mongodb+srv://amancodes0:EV7MOaNjBHcPqt1I@cluster0.uqkkghd.mongodb.net/'),
+  MONGO_URL: Joi.string().default('mongodb://localhost:27017/'),
   SEED: Joi.boolean().default(false),
 }).unknown().required();
 
