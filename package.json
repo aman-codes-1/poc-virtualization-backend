@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/src/index.js",
     "start:ts": "tsc-watch --project . --onSuccess \"npm run nodemon\"",
     "start:extreme": "tsc-watch --project . --onSuccess \"npm run nodemon:extreme\"",
     "nodemon": "nodemon ./dist/src/index.js",
